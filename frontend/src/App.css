@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #1e0028;
+  --secondary-color: #00ffff;
+  --tertiary-color: #ff00c8;
+  --accent-color: #32cd32;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  color: var(--secondary-color);
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 1rem;
+  background-color: #120018;
+  overflow-y: auto;
+}
+
+.new-workspace {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--accent-color);
+}
+
+.workspace-card {
+  background-color: #220033;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+}
+.workspace-header span {
+  cursor: pointer;
+}
+.thread-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+.thread-list li {
+  cursor: pointer;
+  padding: 0.25rem 0;
+}
+
+.main-area {
+  flex: 1;
+  position: relative;
+  padding: 1rem;
+}
+.settings-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.chat-area {
+  margin-top: 2rem;
+}
+.message.user {
+  color: var(--accent-color);
+}
+.message.assistant {
+  color: var(--tertiary-color);
+}
+.placeholder {
+  color: var(--tertiary-color);
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #220033;
+  padding: 1rem;
+  min-width: 300px;
+}
